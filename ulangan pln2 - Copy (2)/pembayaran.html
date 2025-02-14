@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%; /* Menetapkan tinggi 100% agar footer tetap di bawah */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Memastikan footer selalu berada di bawah */
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-image: linear-gradient(to right, rgba(7, 60, 207, 0.911), rgb(0, 183, 255));
+        }
+
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .navbar-left a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .navbar-left a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar-right {
+            display: flex;
+        }
+
+        .login-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Styling untuk teks dan form */
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 1em;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"] {
+            padding: 10px;
+            font-size: 1em;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="email"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:active {
+            background-color: #388e3c;
+        }
+
+        /* Styling untuk footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 40px; /* Memberikan jarak antara konten dan footer */
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <!-- Logo dan Opsi di kiri -->
+            <div class="navbar-left">
+                <img src="pln1.png" alt="Logo" class="logo"> <!-- Ganti 'logo.png' dengan path gambar Anda -->
+                <a href="utama.html">Beranda</a>
+                <a href="tentang.html">Tentang</a>
+                <a href="pembayaran.html">Pembayaran Listrik</a>
+                <a href="karir.html">Karir</a>
+                <a href="anggota.html">Anggota</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+            
+            <!-- Tombol Login di kanan -->
+            <div class="navbar-right">
+                <a href="login.html" target="_parent"><button class="login-btn">Logout</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Pembayaran Listrik PLN</h2><br>
+        <form action="berhasil.html" method="get">
+            <label for="id_pelanggan">ID Pelanggan:</label>
+            <input type="text" id="id_pelanggan" name="id_pelanggan" placeholder="Masukkan ID Pelanggan" required>
+
+            <label for="jumlah_bayar">Jumlah Pembayaran (Rp):</label>
+            <input type="number" id="jumlah_bayar" name="jumlah_bayar" placeholder="Jumlah yang dibayar" required>
+
+            <label for="email">Email (untuk notifikasi):</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+
+            <button type="submit">Bayar</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 PLN. Semua hak cipta dilindungi.</p>
+        <p>
+            <a href="privacy.html">Kebijakan Privasi</a> | 
+            <a href="terms.html">Syarat & Ketentuan</a>
+        </p>
+    </footer>
+
+</body>
+</html>

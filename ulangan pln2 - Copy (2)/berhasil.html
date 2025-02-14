@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Membuat kiri dan kanan terpisah */
+  align-items: center;
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, rgba(7, 60, 207, 0.911), rgb(0, 183, 255));
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center; /* Menyelaraskan logo dan teks secara horizontal */
+}
+
+.logo {
+  width: 40px; /* Ukuran logo */
+  height: auto;
+  margin-right: 20px; /* Memberikan jarak antara logo dan menu */
+}
+
+.navbar-left a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.navbar-left a:hover {
+  text-decoration: underline;
+}
+
+.navbar-right {
+  display: flex;
+}
+
+.login-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+}
+
+.cropped {
+  width: 1592px;
+  height: 300px;
+  overflow: hidden;
+  border: 5px solid black;
+}
+
+.cropped img {
+  margin: -10px 0px 0px -180px;
+}
+
+.text1 {
+  font-size: 30px;
+  color: #0ca7c2;
+}
+
+.text {
+  font-size: 20px;
+  color: #000000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+.text {
+  flex: 1; /* Mengatur teks untuk mengambil ruang yang tersedia */
+  max-width: 50%; /* Batasi lebar maksimal */
+}
+
+.video {
+  flex: 1; /* Video juga akan mengambil ruang yang sama */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsif, jika lebar layar lebih kecil dari 768px, layout berubah menjadi vertikal */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text, .video {
+    max-width: 100%;
+  }
+}
+
+/* Styling untuk bagian center, setelah navbar */
+.center-message {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.center-message h2 {
+  font-size: 32px;
+  color: #28a745; /* Warna hijau yang menunjukkan keberhasilan */
+}
+
+.center-message p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Styling untuk footer */
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+      <!-- Logo dan Opsi di kiri -->
+      <div class="navbar-left">
+        <img src="pln1.png" alt="Logo" class="logo"> <!-- Ganti 'logo.png' dengan path gambar Anda -->
+        <a href="utama.html">Beranda</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="pembayaran.html">Pembayaran Listrik</a>
+        <a href="karir.html">karir</a>
+        <a href="anggota.html">anggota</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+      
+      <!-- Tombol Login di kanan -->
+      <div class="navbar-right">
+        <a href="login.html" target="_parent"><button class="login-btn">Logout</button></a>
+      </div>
+    </nav>
+  </header>
+    <center>
+        <h2>Pembayaran berhasil!!</h2>
+        <p>terima kasih telah melakukan pembayaran</p>
+    </center>
+</html>

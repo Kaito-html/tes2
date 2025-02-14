@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            /* Membuat kiri dan kanan terpisah */
+            align-items: center;
+            padding: 10px 20px;
+            background-image: linear-gradient(to right, rgba(7, 60, 207, 0.911), rgb(0, 183, 255));
+        }
+
+        .navbar-left {
+            display: flex;
+            align-items: center;
+            /* Menyelaraskan logo dan teks secara horizontal */
+        }
+
+        .logo {
+            width: 40px;
+            /* Ukuran logo */
+            height: auto;
+            margin-right: 20px;
+            /* Memberikan jarak antara logo dan menu */
+        }
+
+        .navbar-left a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .navbar-left a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar-right {
+            display: flex;
+        }
+
+        .login-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #45a049;
+        }
+
+        .cropped {
+            width: 1592px;
+            height: 300px;
+            overflow: hidden;
+            border: 3px solid black;
+        }
+
+        .cropped img {
+            margin: -200px 0px 0px -180px;
+        }
+
+        /* Styling untuk footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px; /* Memberikan jarak antara konten dan footer */
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <!-- Logo dan Opsi di kiri -->
+            <div class="navbar-left">
+                <img src="pln1.png" alt="Logo" class="logo"> <!-- Ganti 'logo.png' dengan path gambar Anda -->
+                <a href="utama.html">Beranda</a>
+                <a href="tentang.html">Tentang</a>
+                <a href="pembayaran.html">Pembayaran Listrik</a>
+                <a href="karir.html">karir</a>
+                <a href="anggota.html">anggota</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+
+            <!-- Tombol Login di kanan -->
+            <div class="navbar-right">
+                <a href="login.html" target="_parent"><button class="login-btn">Logout</button></a>
+            </div>
+        </nav>
+    </header>
+    <div class="cropped">
+        <img src="pln7.jpg">
+    </div>
+
+    <center>
+        <h2>TENTANG PLN</h2>
+    </center>
+    <h4>profil perusahaan :</h4>
+    <ul>
+        <li>Perusahaan: PT Perusahaan Listrik Negara (Persero)</li>
+        <li>Tipe: Badan Usaha Milik Negara (BUMN)</li>
+        <li>Tanggal Berdiri: 27 Oktober 1945</li>
+        <li>Kantor Pusat: Jakarta, Indonesia</li>
+        <li>Sektor: Energi, Listrik</li>
+        <li>Industri: Penyediaan dan distribusi energi listrik</li>
+        <li>Website Resmi: www.pln.co.id</li>
+    </ul><br>
+
+    <ul>
+        <li><strong>Visi:</strong><br> Menjadi perusahaan energi kelas dunia yang terdepan dalam memberikan layanan terbaik, dengan energi
+            yang ramah lingkungan dan berkelanjutan.</li>
+        <li><strong>Misi:</strong><br>
+            Menyediakan energi listrik yang handal, berkualitas, dan terjangkau untuk seluruh lapisan masyarakat.<br>
+            Berperan aktif dalam mendukung pembangunan ekonomi dan sosial Indonesia.<br>
+            Mengedepankan pemanfaatan energi baru terbarukan (EBT) demi keberlanjutan dan ramah lingkungan.<br>
+            Mengelola perusahaan secara profesional dan berorientasi pada kepuasan pelanggan.</li><br>
+    </ul>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 PLN. Semua hak cipta dilindungi.</p>
+    <p>
+      <a href="privacy.html">Kebijakan Privasi</a> | 
+      <a href="terms.html">Syarat & Ketentuan</a>
+    </p>
+  </footer>
+  
+
+</html>

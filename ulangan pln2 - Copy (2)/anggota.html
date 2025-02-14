@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-image: linear-gradient(to right, rgba(7, 60, 207, 0.911), rgb(0, 183, 255));
+        }
+
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .navbar-left a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .navbar-left a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar-right {
+            display: flex;
+        }
+
+        .login-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #45a049;
+        }
+
+        .text1 {
+            font-size: 30px;
+            color: #000000;
+            text-decoration: underline rgba(6, 240, 220, 0.808);
+            text-underline-offset: 10px;
+        }
+
+        .text {
+            font-size: 20px;
+            color: #000000;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-direction: column;
+        }
+
+        .container h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="pln1.png" alt="Logo" class="logo"> <!-- Ganti 'logo.png' dengan path gambar Anda -->
+                <a href="utama.html">Beranda</a>
+                <a href="tentang.html">Tentang</a>
+                <a href="pembayaran.html">Pembayaran Listrik</a>
+                <a href="karir.html">Karir</a>
+                <a href="anggota.html">Anggota</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+            
+            <div class="navbar-right">
+                <a href="login.html" target="_parent"><button class="login-btn">Logout</button></a>
+            </div>
+        </nav> 
+    </header>
+
+    <div class="container">
+        <h1>Daftar Anggota PLN</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Jabatan</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Tiyo Jordan</td>
+                    <td>Direktur Utama</td>
+                    <td>tyo@pln.co.id</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maria Ulfa</td>
+                    <td>Manager Operasional</td>
+                    <td>maria@pln.co.id</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Andi Saputra</td>
+                    <td>Staf Teknik</td>
+                    <td>andi@pln.co.id</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Siti Aminah</td>
+                    <td>Staf Keuangan</td>
+                    <td>siti@pln.co.id</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>Daftar Anggota Pembeli</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Alamat</th>
+                    <th>Email</th>
+                    <th>Nomor Token</th> <!-- Kolom untuk Nomor Token -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Kepin</td>
+                    <td>Jl. Merdeka No. 5</td>
+                    <td>kepin@example.com</td>
+                    <td>123456</td> <!-- Nomor Token -->
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>Jl. Pahlawan No. 2</td>
+                    <td>janesmith@example.com</td>
+                    <td>789012</td> <!-- Nomor Token -->
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rusdi Santoso</td>
+                    <td>Jl. Raya No. 10</td>
+                    <td>rusdi@example.com</td>
+                    <td>345678</td> <!-- Nomor Token -->
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Lina Dwi</td>
+                    <td>Jl. Bukit No. 8</td>
+                    <td>lina@example.com</td>
+                    <td>901234</td> <!-- Nomor Token -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 PLN. Semua hak cipta dilindungi.</p>
+        <p>
+            <a href="privacy.html">Kebijakan Privasi</a>
+            <a href="terms.html">Syarat & Ketentuan</a>
+        </p>
+    </footer>
+</body>
+</html>

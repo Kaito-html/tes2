@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Membuat kiri dan kanan terpisah */
+  align-items: center;
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, rgba(7, 60, 207, 0.911) , rgb(0, 183, 255));
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center; /* Menyelaraskan logo dan teks secara horizontal */
+}
+
+.logo {
+  width: 40px; /* Ukuran logo */
+  height: auto;
+  margin-right: 20px; /* Memberikan jarak antara logo dan menu */
+}
+
+.navbar-left a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.navbar-left a:hover {
+  text-decoration: underline;
+}
+
+.navbar-right {
+  display: flex;
+}
+
+.login-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+}
+.cropped {
+     width: 1592px;
+     height: 300px;
+     overflow: hidden;
+     border: 3px solid black;
+}
+
+ .cropped img {
+     margin: -10px 0px 0px -180px;
+}
+.text1{
+  font-size: 30px;
+  color: #0ca7c2;
+}
+
+.text{
+  font-size: 20px;
+  color: #000000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Styling untuk teks */
+.text {
+    flex: 1; /* Mengatur teks untuk mengambil ruang yang tersedia */
+    max-width: 50%; /* Batasi lebar maksimal */
+}
+
+/* Styling untuk video */
+.video {
+    flex: 1; /* Video juga akan mengambil ruang yang sama */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsif, jika lebar layar lebih kecil dari 768px, layout berubah menjadi vertikal */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text, .video {
+        max-width: 100%;
+    }
+}
+
+/* Styling untuk footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px; /* Memberikan jarak antara konten dan footer */
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+      <!-- Logo dan Opsi di kiri -->
+      <div class="navbar-left">
+        <img src="pln1.png" alt="Logo" class="logo"> <!-- Ganti 'logo.png' dengan path gambar Anda -->
+        <a href="utama.html">Beranda</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="pembayaran.html">Pembayaran Listrik</a>
+        <a href="karir.html">karir</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+      
+      <!-- Tombol Login di kanan -->
+      <div class="navbar-right">
+        <a href="login.html" target="_parent"><button class="login-btn">Logout</button></a>
+      </div>
+    </nav>
+  </header>
+  <div class="cropped">
+    <img src="pln2.jpg">
+</div>
+    <center>
+    <p class="text1"><u>MANFAAT LAYANAN ONLINE KAMI</u></p>
+    </center>
+    
+    <div class="container">
+      <div class="text">
+        <h3>penyambung baru</h3>
+          <p>Layanan permohonan penyambungan baru listrik secara online yang cepat, mudah, nyaman, dan aman serta dapat dimonitor prosesnya</p><br>
+          <h3>perubahan daya</h3>
+          <p>Layanan permohonan perubahan daya listrik secara online yang cepat, mudah, nyaman, dan aman serta dapat dimonitor prosesnya</p><br>
+          <h3>penyambungan sementara</h3>
+          <p>layanan permohonan penyambungan listrik sementara secara online yang cepat, mudah, nyaman, dan aman serta dapat dimonitor prosesnya</p>
+      </div>
+      <div class="video">
+          <video controls width="500">
+              <source src="pln vid.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+  </div>
+
+  <!-- Footer Section -->
+<footer>
+  <p>&copy; 2024 PLN. Semua hak cipta dilindungi.</p>
+  <p>
+    <a href="privacy.html">Kebijakan Privasi</a> | 
+    <a href="terms.html">Syarat & Ketentuan</a>
+  </p>
+</footer>
+
+</body>
+</html>
